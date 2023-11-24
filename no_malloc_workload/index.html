@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WASM Test</title>
+    <script src="cal_wasm.js"></script>
+    <script src="cal_js.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("wasm_calculate").addEventListener("click", run_wasm);
+            document.getElementById("js_calculate").addEventListener("click", run_js);
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="wasm_container">
+        <div><button id="wasm_calculate">wasm_calculate</button></div>
+        <div>WASM count 함수 실행 시간 : <span id="time_wasm"></span></div>
+    </div>
+
+    <p></p>
+
+    <div class="js_container">
+        <div><button id="js_calculate">js_calculate</button></div>
+        <div>JS count 함수 실행 시간 : <span id="time_js"></span></div>
+    </div>
+
+    <script>
+       <!-- Shown below -->
+    </script>
+  </body>
+</html>

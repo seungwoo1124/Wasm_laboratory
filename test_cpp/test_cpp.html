@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WASM CPP TEST</title>
+    <script src="test_cpp.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("test_cpp").addEventListener("click", run_wasm);
+      });
+    </script>
+  </head>
+
+  <body>
+    <label for="a">a : </label>
+    <input type="text" id="a" name="a">
+    <label for="b">b : </label>
+    <input type="text" id="b" name="b">
+    <button id="test_cpp">test_cpp</button>
+  </body>
+</html>
