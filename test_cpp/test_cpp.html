@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>WASM CPP TEST</title>
-    <script src="test_cpp.js"></script>
+    <script src="my_glue_code.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("test_cpp").addEventListener("click", run_wasm);
@@ -17,5 +17,7 @@
     <label for="b">b : </label>
     <input type="text" id="b" name="b">
     <button id="test_cpp">test_cpp</button>
+    <br></br>
+    Wasm 인스턴스 메모리 크기 : <p id="wasmMemory">0</p>
   </body>
 </html>
